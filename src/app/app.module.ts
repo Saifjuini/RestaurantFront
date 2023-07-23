@@ -7,11 +7,13 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { AboutComponent } from './about/about.component';
 import { BookingComponent } from './booking/booking.component';
 import { ContactComponent } from './contact/contact.component';
-import { MenuComponent } from './menu/menu.component';
+import { MenuComponent } from './listProduct/menu/menu.component';
 import { ServiceComponent } from './service/service.component';
 import { TeamComponent } from './team/team.component';
 import { TestomonialComponent } from './testomonial/testomonial.component';
-import { FoodProductComponent } from './food-product/food-product.component';
+import { FoodProductComponent } from './listProduct/food-product/food-product.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ListTablesComponent } from './list-tables/list-tables.component';
 
 @NgModule({
   declarations: [
@@ -24,10 +26,12 @@ import { FoodProductComponent } from './food-product/food-product.component';
     ServiceComponent,
     TeamComponent,
     TestomonialComponent,
-    FoodProductComponent
+    FoodProductComponent,
+    ListTablesComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],
