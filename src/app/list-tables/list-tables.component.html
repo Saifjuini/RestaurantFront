@@ -1,0 +1,14 @@
+<div class="wrap">
+	<div class="box" *ngFor="let table of Tables">
+	  <div class="box-top">
+		<img class="box-image" [src]="table.tablePicture" alt="Girl Eating Pizza">
+		<div class="title-flex">
+		  <h3 class="box-title">{{table.tableType}}</h3>
+		  <p class="user-follow-info">{{table.status}}</p>
+		</div>
+		<p class="description">{{table.description}}</p>
+	  </div>
+	  <a class="button" (click)="goToReservation(table.id)">reserve this table</a>
+	</div>
+	
+  </div>

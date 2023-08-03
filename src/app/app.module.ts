@@ -14,6 +14,7 @@ import { TestomonialComponent } from './testomonial/testomonial.component';
 import { FoodProductComponent } from './listProduct/food-product/food-product.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ListTablesComponent } from './list-tables/list-tables.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ListTablesComponent } from './list-tables/list-tables.component';
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

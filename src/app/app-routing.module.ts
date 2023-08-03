@@ -8,7 +8,7 @@ import { ListTablesComponent } from './list-tables/list-tables.component';
 
 const routes: Routes = [
   { path: 'home', component:MainPageComponent },
-  {path :'book' , component: BookingComponent},
+  {path :'book/:id', component: BookingComponent},
   {path : 'menu' , component :MenuComponent},
   {path : 'listTables' , component : ListTablesComponent},
   {path : '' , redirectTo:'home' , pathMatch :'full'},
